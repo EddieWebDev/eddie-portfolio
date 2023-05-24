@@ -1,19 +1,38 @@
-import { GoMail } from "react-icons/go";
+/* import { GoMail } from "react-icons/go"; */
+import { FiPhone, FiMail } from "react-icons/fi";
+import { BsLinkedin, BsGithub } from "react-icons/bs";
+import { IoShareSocialOutline } from "react-icons/io5";
 
 export const Footer = () => {
   return (
-    <div className="flex justify-around p-8">
-      <div className="flex items-center gap-2">
-          <GoMail />
-        <p>
-          E-mail
-        </p>
-      </div>
-      <div>
-        <p>Telephone number</p>
-      </div>
-      <div>
-        <p>Social media</p>
+    <div className="flex flex-col items-center p-8">
+      <p className="text-3xl tett-bold py-4 font-bold">Contacts</p>
+      <div className="flex w-full justify-center flex-wrap py-4 gap-2 md:gap-0">
+        <div className="flex flex-col items-center gap-2 w-full md:w-1/3">
+          <div className="flex items-center gap-2">
+            <FiMail />
+            <p className="font-bold">E-mail</p>
+          </div>
+          <p className="h-full">eddie.andersson@gmail.com</p>
+        </div>
+        <div className="flex flex-col items-center gap-2 w-full md:w-1/3">
+          <div className="flex items-center gap-2">
+            <FiPhone />
+            <p className="font-bold">Telephone number</p>
+          </div>
+          <p className="h-full">073-25344XX</p>
+        </div>
+
+        <div className="flex flex-col items-center gap-2 w-full md:w-1/3">
+          <div className="flex items-center gap-2">
+            <IoShareSocialOutline />
+            <p className="font-bold">Social media</p>
+          </div>
+          <div className="flex gap-2 h-full items-center">
+            <BsLinkedin />
+            <BsGithub />
+          </div>
+        </div>
       </div>
     </div>
   );
