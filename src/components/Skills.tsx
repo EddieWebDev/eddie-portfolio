@@ -1,3 +1,15 @@
+import { Skill } from "./Skill";
+import { skills } from "Utils/skills";
+
 export const Skills = () => {
-  return <div className="border-2 border-blue-800">Skills</div>;
+  return (
+    <section className="flex flex-col items-center p-8">
+      <p className="text-3xl tett-bold py-4">My skills</p>
+      <div className="flex gap-4 justify-center flex-wrap py-4 max-w-4xl">
+        {skills.map((skill) => (
+          <Skill key={skill} skill={skill} />
+        ))}
+      </div>
+    </section>
+  );
 };
