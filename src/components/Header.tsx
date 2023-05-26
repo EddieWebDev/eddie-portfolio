@@ -5,6 +5,7 @@ export const Header = () => {
 
   return (
     <header className="h-52 lg:h-96 bg-hero-image bg-cover flex flex-col text-white">
+      {/* MOBILE */}
       <div className="fixed top-0 w-full bg-black opacity-90 lg:hidden">
         <div className="flex justify-between p-4 max-w-7xl">
           <div className="flex items-center gap-6">
@@ -55,29 +56,39 @@ export const Header = () => {
         </section>
       )}
 
-      <div className="hidden lg:block">
-        <nav className="flex flex-row-reverse gap-4 p-4 text-white">
-          <a href="#about">
-            <p>About</p>
-          </a>
-          <a href="#skills">
-            <p>Skills</p>
-          </a>
-          <a href="#portfolio">
-            <p>Portfolio</p>
-          </a>
-          <a href="#contact">
-            <p>Contact</p>
-          </a>
-        </nav>
-        <div className="flex flex-col items-center justify-center gap-12 h-full">
+      {/* DESKTOP */}
+      <div className="hidden lg:block h-full">
+        
+        <div className="fixed top-0 w-full bg-black opacity-90">
+          <div className="flex justify-between mx-10 my-6">
+            <div className="flex items-center gap-8">
+              <p className="text-5xl font-bold uppercase">Eddie</p>
+              <nav className="flex gap-4 text-white text-xl">
+                <a href="#about" className="hover:opacity-75">
+                  <p>About</p>
+                </a>
+                <a href="#skills" className="hover:opacity-75">
+                  <p>Skills</p>
+                </a>
+                <a href="#portfolio" className="hover:opacity-75">
+                  <p>Portfolio</p>
+                </a>
+                <a href="#contact" className="hover:opacity-75">
+                  <p>Contact</p>
+                </a>
+              </nav>
+            </div>
+            <button className="bg-red-200 rounded-3xl px-2">
+              Download CV
+            </button>
+          </div>
+        </div>
+
+        <div className="h-full flex items-center justify-center">
           <h1 className="text-center text-4xl text-white font-bold">
             Hi there! My name is Svetlana and <br />{" "}
             <p className="text-pink-400">I'm a front-end developer</p>
           </h1>
-          <button className="bg-red-200 rounded-lg p-4 w-auto">
-            Download the CV
-          </button>
         </div>
       </div>
     </header>
