@@ -1,13 +1,12 @@
-/* import { GoMail } from "react-icons/go"; */
 import { FiPhone, FiMail } from "react-icons/fi";
 import { BsLinkedin, BsGithub } from "react-icons/bs";
 import { IoShareSocialOutline } from "react-icons/io5";
 
 export const Footer = () => {
   return (
-    <div className="flex flex-col items-center p-8">
-      <p className="text-3xl tett-bold py-4 font-bold">Contacts</p>
-      <div className="flex w-full justify-center flex-wrap py-4 gap-2 md:gap-0">
+    <section id="footer" className="flex flex-col items-center lg:p-8">
+      <p className="text-3xl tett-bold my-8 font-bold">Contacts</p>
+      <div className="flex w-full justify-center flex-wrap gap-2 md:gap-0">
         <div className="flex flex-col items-center gap-2 w-full md:w-1/3">
           <div className="flex items-center gap-2">
             <FiMail />
@@ -34,6 +33,6 @@ export const Footer = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };

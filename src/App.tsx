@@ -8,7 +8,7 @@ const App = () => {
   return (
     <div className="min-h-screen flex-col justify-center items-center">
       <Header />
-      <main className="mx-auto px-4 max-w-7xl">
+      <main className="mx-auto px-4 text-left lg:text-center lg:px-12 max-w-7xl">
         <About />
         <Skills />
         <Portfolio />

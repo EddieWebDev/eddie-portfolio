@@ -1,8 +1,8 @@
 export const About = () => {
   return (
-    <section id="about" className="flex flex-col items-center p-8">
-      <p className="text-3xl font-bold py-4">About me</p>
-      <p className="max-w-4xl text-center">
+    <section id="about" className="flex flex-col items-center lg:p-8">
+      <p className="text-3xl font-bold my-8">About me</p>
+      <p className="max-w-4xl">
         Lorem Ipsum is simply dummy text of the printing and typesetting
         industry. Lorem Ipsum has been the industry's standard dummy text ever
         since the 1500s, when an unknown printer took a galley of type and
